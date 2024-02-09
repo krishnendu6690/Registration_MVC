@@ -1,0 +1,57 @@
+﻿@model RegistrationForm_MVC.Models.Table
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>IndexView</title>
+</head>
+<body>
+    <div> 
+        <center>
+            @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+            {
+            <table align="center" height="500px" width="400px">
+                <tr>
+                    <td colspan="2" align="center"><h1>Registration Form </h1></td>
+                </tr>
+                <tr>
+                    <td>First Name</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Mobile No.</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Salary</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Sign Up" />
+                    </td>
+                    
+                </tr>
+            </table>
+            };
+        </center>
+    </div>
+</body>
+</html>
